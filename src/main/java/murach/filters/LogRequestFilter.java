@@ -8,9 +8,9 @@ import murach.util.CookieUtil;
 
 import java.io.IOException;
 
-@WebFilter(filterName = "LogRequestFilter",
+@WebFilter(filterName = "LogRequestFilter"/*,
         urlPatterns = "/*",
-        dispatcherTypes = {DispatcherType.REQUEST, DispatcherType.FORWARD})
+        dispatcherTypes = {DispatcherType.REQUEST, DispatcherType.FORWARD}*/)
 public class LogRequestFilter implements Filter {
     private FilterConfig filterConfig = null;
 

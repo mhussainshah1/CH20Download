@@ -3,7 +3,6 @@ package murach.filters;
 import jakarta.servlet.*;
 import jakarta.servlet.annotation.WebFilter;
 import jakarta.servlet.http.HttpServletRequest;
-import murach.download.DownloadServlet;
 
 import java.io.IOException;
 

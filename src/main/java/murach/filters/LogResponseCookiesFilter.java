@@ -11,7 +11,9 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-@WebFilter(filterName = "LogResponseCookiesFilter")
+@WebFilter(filterName = "LogResponseCookiesFilter"/*,
+        urlPatterns = "/*",
+        dispatcherTypes = {DispatcherType.REQUEST, DispatcherType.FORWARD}*/)
 public class LogResponseCookiesFilter implements Filter {
     private FilterConfig filterConfig = null;
 

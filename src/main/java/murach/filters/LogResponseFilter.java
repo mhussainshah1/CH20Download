@@ -7,9 +7,9 @@ import jakarta.servlet.http.HttpServletResponse;
 
 import java.io.IOException;
 
-@WebFilter(filterName = "LogResponseFilter",
+@WebFilter(filterName = "LogResponseFilter"/*,
         urlPatterns = "/*",
-        dispatcherTypes = {DispatcherType.REQUEST, DispatcherType.FORWARD})
+        dispatcherTypes = {DispatcherType.REQUEST, DispatcherType.FORWARD}*/)
 public class LogResponseFilter implements Filter {
     private FilterConfig filterConfig = null;
 

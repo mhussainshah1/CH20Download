@@ -6,11 +6,12 @@ import jakarta.servlet.annotation.*;
 import java.io.IOException;
 
 @WebFilter(filterName = "TestInitParameterFilter",
-        urlPatterns = {"/*"},
         initParams = {
                 @WebInitParam(name = "logFilename",
                         value = "test_init_params.log")
-        })
+        }
+        /*urlPatterns = {"/*"},*/
+)
 public class TestInitParameterFilter implements Filter {
     private FilterConfig filterConfig = null;
 
@@ -31,3 +32,5 @@ public class TestInitParameterFilter implements Filter {
         filterConfig = null;
     }
 }
+
+
