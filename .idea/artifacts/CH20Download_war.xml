@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="CH20Download:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>CH20Download</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="CH20Download-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="CH20Download:war exploded" />
+    </root>
+  </artifact>
+</component>
