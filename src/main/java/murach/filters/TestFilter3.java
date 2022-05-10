@@ -6,7 +6,7 @@ import jakarta.servlet.http.HttpServletRequest;
 
 import java.io.IOException;
 
-@WebFilter(filterName = "TestFilter3", servletNames = {"DownloadServlet"})
+@WebFilter(filterName = "TestFilter3", servletNames = "DownloadServlet")
 public class TestFilter3 implements Filter {
 
     private FilterConfig filterConfig = null;
